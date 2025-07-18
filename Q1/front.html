@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1 class="main-title">
+            URL Shortener
+        </h1>
+
+        <div class="input-group">
+            <label for="longUrlInput" class="input-label">
+                Enter Long URL
+            </label>
+            <input
+                type="url"
+                id="longUrlInput"
+                class="url-input"
+            />
+        </div>
+
+        <button
+            id="shortenButton"
+            class="shorten-button"
+        >
+            Shorten URL
+        </button>
+
+        <div id="shortUrlDisplay" class="short-url-display hidden">
+            <h2 class="short-url-title">Your Shortened URL:</h2>
+            <div class="short-url-content">
+                <a
+                    id="shortUrlLink"
+                    href="#"
+                    target="_blank"
+                    class="short-url-link"
+                >
+                </a>
+                <button
+                    id="copyButton"
+                    class="copy-button"
+                    title="Copy"
+                >
+                    Copy
+                </button>
+            </div>
+        </div>
+
+        <div id="messageDisplay" class="message-display hidden">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
